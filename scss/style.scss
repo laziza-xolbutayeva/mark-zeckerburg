@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$header-bg:#6A96D8;
+$today-bg:#DEE0E4;
+$accept-bg:#E6EDF6;
+
+body{
+    
+    background-color:#AAC1D6;
+}
+.container{
+    width: 30%;
+    margin: 90px auto;
+}
+
+.nav{
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        padding: 15px 25px 0 25px;
+        background-color: $header-bg;
+        color: #ffffff;
+    }
+
+    &__item{
+        text-transform: uppercase;
+    }
+    
+    &__link-header{
+        width: 15pxpx;
+        height: 15px;
+        color:#fff;
+        border: none;
+        font-size: 25px;
+        background-color:$header-bg;
+    }
+    &__body{
+        height: 370px;
+        padding: 15px;
+        background-color:#ffffff;
+    }
+    &__today{
+        height: 50px;
+        display: flex;
+        color:$today-bg;
+    }
+    &__line{
+        display:inline-block;
+        width: 180px;
+        height: 1px;
+        margin: 10px 0 0 0;
+        border-top: 1px solid $today-bg;
+    }
+    &__title{
+        text-transform: uppercase;
+        font-size: 20px;
+        margin: 0 10px;
+    }
+    &__time{
+        color: #B4B4B4;
+        font-size: 15px;
+    }
+    &__text-div{
+        display: inline-block;
+        background-color: $accept-bg;
+        padding: 10px;
+        border-radius: 0 8px 8px 8px;
+        margin: 5px 0;
+    }
+    &__text-accept{
+        display: inline-block;
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+    &__text-div-send{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        margin: 5px 0;
+    }
+    &__text-send{
+        font-size: 15px;
+        display: inline-block;
+        font-family: sans-serif;
+        padding: 15px;
+        border-radius: 8px 0px 8px 8px;
+        background-color: #f2f2f2;
+    }
+    &__footer{
+        height: 55px;
+        background-color:#ffffff;
+        padding: 8px 15px;
+    }
+    &__footer-text{
+        width: 320px;
+        height: 40px;
+        border: none;
+        color: $today-bg;
+        font-size: 16px;
+    }
+    &__footer-text:hover{
+        border: none;
+    }
+    &__btn-send{
+        border: 1px solid #FFF;
+        background-color:#fff;
+        color: #6F96D8;
+        font-size: 15px;
+        font-weight: 5px;
+    }
+    
+}
+.send-time{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.end{
+    background-color:#FFC2C1;
+}
